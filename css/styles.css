@@ -476,6 +476,11 @@ p {
   display: flex;
   gap: 16px;
 }
+.social-svg-footer {
+  width: 24px;
+  height: 24px;
+}
+
 .p-modal-btn-container {
 }
 
@@ -491,6 +496,10 @@ p {
   min-height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
+}
+.input-footer:hover,
+.input-footer:focus {
+  border-color: #31d0aa;
 }
 
 .input-footer::placeholder {
@@ -516,4 +525,8 @@ p {
 }
 .send-svg {
   margin-left: 16px;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #31d0aa;
 }
