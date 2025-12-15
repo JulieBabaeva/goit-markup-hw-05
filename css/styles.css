@@ -426,7 +426,6 @@ p {
 }
 .container-footer {
   display: flex;
-  align-items: baseline;
 }
 .footer-column {
   flex-direction: column;
@@ -435,8 +434,12 @@ p {
   color: #ffffff;
   margin-right: 120px;
 }
-.footer-column a:hover,
-.footer-column a:focus {
+.footer-column-socials {
+  margin-right: 80px;
+}
+
+.footer-column-socials a:hover,
+.footer-column-socials a:focus {
   background-color: #31d0aa;
 }
 
@@ -512,4 +515,5 @@ p {
   color: #fff;
 }
 .send-svg {
+  margin-left: 16px;
 }
