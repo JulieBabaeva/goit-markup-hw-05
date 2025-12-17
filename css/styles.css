@@ -548,6 +548,7 @@ p {
 }
 
 .modal {
+  position: relative;
   background-color: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -556,6 +557,24 @@ p {
   height: 584px;
 }
 
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  fill: #2e2f42;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.icon-close {
+  fill: #2e2f42;
+}
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
@@ -588,21 +607,21 @@ p {
 .input-wrapper {
   position: relative;
 }
-.input-wrapper:focus-within .modal-svg,
-.input-wrapper:hover .modal-svg {
+.input-wrapper:focus-within .modal-svg {
   color: #404bbf;
 }
 
 .modal-input {
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 360px;
+  width: 100%;
   height: 40px;
   margin-bottom: 8px;
+  padding-left: 38px;
+  outline: transparent;
 }
-.modal-input:hover,
+
 .modal-input:focus,
-.textarea-input:hover,
 .textarea-input:focus {
   border: 1px solid #4d5ae5;
 }
@@ -628,6 +647,7 @@ p {
   color: rgba(46, 47, 66, 0.4);
   padding-left: 16px;
   padding-top: 8px;
+  outline: transparent;
 }
 textarea::placeholder {
   font-weight: 400;
@@ -639,20 +659,9 @@ textarea::placeholder {
 .modal-agreement {
   display: flex;
 }
-.user-agreement-wrappet {
-  display: flex;
-  position: relative;
-}
 
-.accept-svg {
-  position: absolute;
-  top: 4px;
-  left: 3px;
-  opacity: 0;
-}
 .modal-checkbox {
   position: absolute;
-  opacity: 0;
   pointer-events: none;
 }
 .checkbox-custom {
@@ -660,20 +669,25 @@ textarea::placeholder {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 24px;
   position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.modal-checkbox:checked + .checkbox-custom {
-  fill: #404bbf;
-  border: 1px solid #404bbf;
+.accept-svg {
+  position: absolute;
+  opacity: 0;
+  fill: #f4f4fd;
 }
-/* .modal-checkbox:checked + .checkbox-custom .accept-svg {
-  opacity: 1;
-} */
 
-.for-custom-checkbox-label {
-  display: flex;
+.modal-checkbox:checked + .agreement-label .accept-svg {
+  opacity: 1;
 }
+
+.modal-checkbox:checked + .agreement-label .checkbox-custom {
+  background-color: #404bbf;
+}
+
 .paragraph-agreement {
   font-weight: 400;
   font-size: 12px;
