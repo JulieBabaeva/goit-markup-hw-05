@@ -470,7 +470,7 @@ p {
   display: flex;
   margin-bottom: 16px;
   font-weight: 500;
-  color: #f4f4fd;
+  color: #ffffff;
 }
 .social-list-footer {
   display: flex;
@@ -486,6 +486,10 @@ p {
   flex-direction: row;
   gap: 24px;
 }
+.label-footer {
+  display: flex;
+  gap: 24px;
+}
 .input-footer {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -493,6 +497,13 @@ p {
   min-height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
 }
 .input-footer:hover,
 .input-footer:focus {
@@ -504,13 +515,14 @@ p {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
   padding-left: 16px;
 }
 .subscribe-btn {
   min-width: 165px;
   min-height: 40px;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-radius: 4px;
   padding: 8px 24px;
@@ -519,9 +531,12 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  cursor: pointer;
+  border: none;
 }
 .send-svg {
   margin-left: 16px;
+  height: 24;
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
