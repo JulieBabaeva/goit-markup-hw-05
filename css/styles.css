@@ -481,9 +481,6 @@ p {
   height: 24px;
 }
 
-.p-modal-btn-container {
-}
-
 .subscribe-form {
   display: flex;
   flex-direction: row;
@@ -532,7 +529,7 @@ p {
 }
 /* ----------------------------------MODAL */
 .modal-overlay {
-  background-color: rgba(46, 47, 66, 0.4)
+  background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -544,7 +541,8 @@ p {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -557,10 +555,9 @@ p {
   border-radius: 4px;
   width: 408px;
   min-height: 584px;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
- 
 }
 
 .close-btn {
@@ -569,26 +566,27 @@ p {
   justify-content: center;
   width: 24px;
   height: 24px;
- border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #e7e9fc;
   fill: #2e2f42;
   position: absolute;
   right: 24px;
   top: 24px;
-   padding: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn:hover,
-.close-btn:hover{
+.close-btn:hover {
   background-color: #404bbf;
   border: none;
 }
 
 .icon-close {
   fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-overlay.is-open {
   opacity: 1;
@@ -597,7 +595,6 @@ p {
 .modal-form {
   display: flex;
   flex-direction: column;
-  
 }
 
 .modal-paragraph {
@@ -640,8 +637,7 @@ p {
 .textarea-input:focus {
   border: 1px solid #4d5ae5;
 }
-.modal-input::placeholder {
-}
+
 .modal-svg {
   fill: #2e2f42;
   position: absolute;
