@@ -605,7 +605,7 @@ p {
 }
 
 .close-btn:hover .icon-close,
-close-btn:focus .icon-close {
+.close-btn:focus .icon-close {
   fill: #ffffff;
 }
 
