@@ -760,10 +760,6 @@ textarea::placeholder {
   fill: #f4f4fd;
 }
 
-/* .checkbox-custom:focus .accept-svg {
-  color: #e7e9fc;
-} */
-
 .paragraph-agreement {
   font-weight: 400;
   font-size: 12px;
